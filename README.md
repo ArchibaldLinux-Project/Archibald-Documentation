@@ -67,11 +67,11 @@ ArchibaldLinux/
 
 ## Documentation
 
-- [BUILD.md](docs/BUILD.md) — How to build the ISO from source
-- [INSTALLATION.md](docs/INSTALLATION.md) — Installation guide for end users
-- [BRANDING.md](docs/BRANDING.md) — Brand guidelines and asset usage
-- [CUSTOMIZATION.md](docs/CUSTOMIZATION.md) — Post-install customization
-- [DEVELOPMENT.md](docs/DEVELOPMENT.md) — Contributing guidelines
+- [BUILD.md](BUILD.md) — How to build the ISO from source
+- [INSTALLATION.md](INSTALLATION.md) — Installation guide for end users
+- [BRANDING.md](BRANDING.md) — Brand guidelines and asset usage
+- [CUSTOMIZATION.md](CUSTOMIZATION.md) — Post-install customization
+- [DEVELOPMENT.md](DEVELOPMENT.md) — Contributing guidelines
 
 ## Release Strategy
 
