@@ -16,7 +16,7 @@ A clean, minimal Arch Linux-based distribution with KDE Plasma, systemd, and the
 ### Building the ISO
 
 ```bash
-cd /home/bowser/ArchibaldLinux
+cd /home/xxxxx/ArchibaldLinux
 make build
 ```
 
@@ -79,11 +79,11 @@ Archibald uses **snapshot-based versioning**: each build is tagged with a timest
 
 ## License
 
-[Specify your license here, e.g., GPL-3.0, MIT]
+MIT
 
 ## Contributing
 
-See [docs/DEVELOPMENT.md](docs/DEVELOPMENT.md) for contribution guidelines.
+See [DEVELOPMENT.md](DEVELOPMENT.md) for contribution guidelines.
 
 ---
 
