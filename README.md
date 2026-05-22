@@ -1,6 +1,6 @@
 # Archibald Linux
 
-A clean, minimal Arch Linux-based distribution with KDE Plasma, systemd, and the Calamares installer. Archibald is designed for users who want a lightweight, branded Arch experience without bloatware.
+A clean, minimal Arch Linux-based distribution with KDE Plasma, systemd, and the Calamares installer. Archibald is designed for users who want a lightweight arch distro without having to use archinstaller or simple commandes on archiso.
 
 ## Features
 
