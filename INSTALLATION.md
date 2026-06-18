@@ -77,8 +77,27 @@ diskutil ejectDisk /dev/diskX
    - **Lenovo:** F1 or F2
    - **ASUS:** F2 or Delete
    - **Generic:** F12 or Esc (or see your motherboard manual)
+  
+If nothing above worked use :
+
+### Windows :
+
+```batch
+shutdown /r /fw /t 0
+```
+
+### Linux
+
+```batch
+systemctl reboot --firmware-setup
+```
+
+(If you are not using systemD, you know how to access the bios xD)
+
+## Boot from media (after bios)
+
 3. Select the USB drive to boot from
-4. Wait for the live environment to load (Arch Linux with KDE Plasma)
+4. Wait for the live environment to load.
 
 ---
 
@@ -87,13 +106,13 @@ diskutil ejectDisk /dev/diskX
 ### Live Environment
 
 Once booted, you'll see:
-- KDE Plasma desktop with Calamares installer
-- Network connection configured via NetworkManager (if available)
+- KDE Plasma desktop with a custom calamares like installer
+- Network connection configured via NetworkManager (if any network is available)
 - Root terminal available for advanced users
 
-### Using Calamares Installer
+### Using Installer
 
-**The Calamares installer will guide you through these steps:**
+**The installer will guide you through these steps:**
 
 #### 1. Welcome & Language
 
@@ -168,6 +187,9 @@ After reboot, you'll see:
 3. Select session: **Plasmawayland** or **Plasma (X11)**
    - Recommended: Wayland (modern, better performance on most systems)
 
+### Note
+
+You can still use the normal way to install arch inside of KDE.
 ---
 
 ## Post-Installation Setup
@@ -199,7 +221,7 @@ sudo pacman -Syu
 ### Enable Network Services
 
 ```bash
-# Ensure NetworkManager is running
+# Ensure NetworkManager is running because it should be
 sudo systemctl enable --now NetworkManager
 ```
 
@@ -319,4 +341,4 @@ For issues:
 2. Search [Arch Linux Forums](https://bbs.archlinux.org/)
 3. Report bugs to the Archibald Linux project
 
-Happy hacking! 🐧
+Happy... idk! 🐧
