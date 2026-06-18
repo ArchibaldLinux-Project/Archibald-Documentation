@@ -76,6 +76,7 @@ Edit the following if needed:
 - **`build/archlive/profiledef.sh`** — ISO metadata (name, version, kernel)
 - **`build/archlive/packages.x86_64`** — Package list (add/remove as needed)
 - **`build/archlive/pacman.conf`** — Pacman configuration (mirror selection, repositories)
+- **`branding/`** - Every branding files, feel free to use them how you want to.
 
 ### 3. Run Build
 
@@ -98,6 +99,12 @@ The build process:
 
 **This can take 10-30 minutes** depending on network speed and system performance.
 
+![NOTE]
+
+Be carefull while compiling a distro on your main machine, it can result to unwanted changes in you missunderstand where you are on your machine (directory)
+
+
+
 ### 4. Verify Output
 
 ```bash
@@ -110,6 +117,9 @@ cat build/out/checksums.sha256
 ## Testing the ISO
 
 ### In Virtual Machine (VirtualBox/QEMU)
+
+#### VirtualBox is not tested yet!
+#### QEMU is tested on an x64 machine with and without KVM with 4G of ram.
 
 #### VirtualBox
 
@@ -187,12 +197,6 @@ make clean
 df -h
 ```
 
-### Network timeout during package download
-
-- Check internet connection
-- Manually sync pacman: `sudo pacman -Sy`
-- Try a different Arch mirror in `/etc/pacman.d/mirrorlist`
-
 ---
 
 ## Customizing the Build
@@ -204,11 +208,15 @@ Edit `build/archlive/packages.x86_64`:
 ```bash
 # Add package
 echo "firefox" >> build/archlive/packages.x86_64
+```
 
+OR
+
+```bash
 # Remove package (edit manually)
 vim build/archlive/packages.x86_64
 ```
-
+You can use nano (pacman -S nano)
 Then rebuild:
 
 ```bash
@@ -216,7 +224,7 @@ make clean
 make build
 ```
 
-### Changing the Kernel
+### Changing the Kernel (not recommended)
 
 Edit `build/archlive/profiledef.sh`:
 
